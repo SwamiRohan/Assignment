@@ -1,0 +1,22 @@
+package com.practiceset.AssignmentOne;
+
+// Ques - Make a following class immutable
+
+             class Employee {
+                int id;
+                String name;
+                List<String> addresses;
+            }
+
+
+//Solution - Immutable class in java means that once an object is created, we cannot change its content.
+
+          1. The class must be declared as final so that child classes can’t be created.
+          2. Data members in the class must be declared private so that direct access is not allowed.
+          3. Data members in the class must be declared as final so that we can’t change the value of it after object creation.
+
+            final class Employee{
+            private int id;
+            private String name;
+            private List<String> addresses;
+            }
